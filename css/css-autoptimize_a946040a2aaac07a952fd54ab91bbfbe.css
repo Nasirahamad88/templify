@@ -1,3 +1,6 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
 .wp-block-jetpack-layout-grid-editor,
 .wp-block-jetpack-layout-grid {
     padding-left: 24px;
@@ -18045,7 +18048,7 @@ a:hover {
 
 .scroll-to-top {
     display: none;
-    padding: 0 18px 0 0;
+    padding: 10px 18px 10px 18px;
     background: rgba(0, 0, 0, .3);
     border-radius: 26.5px;
     position: fixed;
@@ -18057,7 +18060,7 @@ a:hover {
     font-size: 16px;
     line-height: 22px;
     transition: all .3s ease-in-out;
-    border: 1px solid #7361df;
+    border: 3px solid #7361df;
     border-left: none
 }
 
@@ -19982,32 +19985,45 @@ footer .footer-menu-wrap {
     top: 50%;
     transform: translateY(-50%);
     background: #7361df;
-    outline: none;
     border: 0;
     border-radius: 50%;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 50px;
     width: 50px;
-    transition: all .4s ease;
-    z-index: 99
+    transition: all 0.4s ease;
+    z-index: 99;
+    cursor: pointer;
 }
 
 .section-video-slider .slick-custom .icon {
-    font-size: 13px
+    font-size: 20px; /* Increase the icon size for better visibility */
+    color: #fff;      /* Set the default icon color */
+    transition: color 0.4s ease;
 }
 
 .section-video-slider .slick-custom:hover {
     background: #fff;
-    color: #17171d
+    color: #17171d;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Add shadow for hover effect */
+}
+
+.section-video-slider .slick-custom:hover .icon {
+    color: #17171d;  /* Icon color change on hover */
 }
 
 .section-video-slider .slick-custom-prev {
-    left: -30px
+    left: -30px;  /* Adjust the left arrow position */
+    background: #fff; 
+    padding: 3px;
+
 }
 
 .section-video-slider .slick-custom-next {
-    right: -15px
+    right: -30px; /* Adjust the right arrow position to be symmetric */
 }
+
 
 .section-video-slider .video-templates__item {
     margin-right: 18px
