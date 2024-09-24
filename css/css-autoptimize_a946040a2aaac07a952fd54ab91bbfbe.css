@@ -18044,6 +18044,7 @@ a:hover {
     .page .section-subtitle {
         width: 100% !important
     }
+    
 }
 
 .scroll-to-top {
@@ -18081,6 +18082,9 @@ a:hover {
         border: 3px solid #7361df;
         border-left: none
     }
+    .scroll-to-top span {
+        display: none;
+    }
 }
 
 .scroll-to-top i {
@@ -18092,12 +18096,19 @@ a:hover {
     padding: 12px 22px;
     transition: all .3s ease-in-out;
     margin-right: 10px;
-    font-size: 16px
+    font-size: 18px;
+    font-weight: 600;
+
 }
 
 @media (max-width:767px) {
     .scroll-to-top i {
-        margin-right: 0
+        
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: inline-block;
+        padding: 18px 18px 18px 18px;
     }
 }
 
@@ -18124,6 +18135,7 @@ a:hover {
     background: #fff;
     color: #17171d
 }
+
 
 .glow-on-hover {
     background: linear-gradient(40deg, #ff2d16, #7a00ff, #ff7300, #fd0, #ff7300, #7a00ff, #ff00c8, #ff2d16);
@@ -18874,7 +18886,7 @@ footer .footer-menu-wrap {
     content: "";
     display: inline-block;
     position: absolute;
-    background: url('/images/hero-icon.png') no-repeat;
+    background: url('/images/youtube.png') no-repeat;
     background-size: cover; /* Ensures background covers the whole area */
     width: 830px;
     height: 440px;
