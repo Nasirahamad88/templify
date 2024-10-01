@@ -3722,9 +3722,11 @@
           arrows: !0,
           asNavFor: null,
           prevArrow:
-            '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
+            '<button class="slick-prev" aria-label="Previous" type="button"><i class="fa-solid fa-circle-chevron-left"></i></button>',
           nextArrow:
-            '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+            '<button class="slick-next" aria-label="Next" type="button"><i class="fa-solid fa-circle-chevron-right"></i></button>',
+          
+
           autoplay: !1,
           autoplaySpeed: 3e3,
           centerMode: !1,
@@ -3733,8 +3735,7 @@
           customPaging: function (t, e) {
             return d('<button type="button" />').text(e + 1);
           },
-          dots: !1,
-          dotsClass: "slick-dots",
+         
           draggable: !0,
           easing: "linear",
           edgeFriction: 0.35,
@@ -4581,7 +4582,7 @@
               .find("li")
               .each(function (t) {
                 var e = s[t];
-                d(this).attr({ role: "presentation" }),
+                d(this).attr({ role: "" }),
                   d(this)
                     .find("button")
                     .first()
@@ -4621,21 +4622,25 @@
       (l.prototype.initDotEvents = function () {
         var t = this;
         !0 === t.options.dots &&
-          t.slideCount > t.options.slidesToShow &&
-          (d("li", t.$dots).on(
-            "click.slick",
-            { message: "index" },
-            t.changeSlide
-          ),
-          !0 === t.options.accessibility &&
-            t.$dots.on("keydown.slick", t.keyHandler)),
-          !0 === t.options.dots &&
-            !0 === t.options.pauseOnDotsHover &&
-            t.slideCount > t.options.slidesToShow &&
-            d("li", t.$dots)
-              .on("mouseenter.slick", d.proxy(t.interrupt, t, !0))
-              .on("mouseleave.slick", d.proxy(t.interrupt, t, !1));
-      }),
+        t.slideCount > t.options.slidesToShow &&
+        (d("li", t.$dots).css('visibility', 'hidden').on(
+          "click.slick",
+          { message: "index" },
+          t.changeSlide
+        ),
+        !0 === t.options.accessibility &&
+        t.$dots.on("keydown.slick", t.keyHandler)),
+        !0 === t.options.dots &&
+        !0 === t.options.pauseOnDotsHover &&
+        t.slideCount > t.options.slidesToShow &&
+        d("li", t.$dots)
+          .on("mouseenter.slick", d.proxy(t.interrupt, t, !0))
+          .on("mouseleave.slick", d.proxy(t.interrupt, t, !1));
+    }
+    ),
+      
+
+
       (l.prototype.initSlideEvents = function () {
         var t = this;
         t.options.pauseOnHover &&
@@ -5729,9 +5734,7 @@
         rows: 0,
         dots: !1,
         variableWidth: !0,
-        prevarrow:  "<button type='button' class='slick-custom slick-custom-prev'><i class=fas fa-chevron-left slick-arrow-icon' aria-hidden='true'></i></button>",
         
-        nextArrow:  "<button type='button' class='slick-custom slick-custom-next'><i class='fas fa-chevron-right slick-arrow-icon' aria-hidden='true'></i></button>",
         responsive: [
           {
             breakpoint: 767,

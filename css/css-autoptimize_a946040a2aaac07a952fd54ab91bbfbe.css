@@ -6046,91 +6046,7 @@ div.components-toolbar>div+div.has-left-divider:before {
     margin-bottom: 30px
 }
 
-.slick-dots {
-    position: absolute;
-    bottom: -25px;
-    display: block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-align: center
-}
 
-.slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer
-}
-
-.slick-dots li button {
-    font-size: 0;
-    line-height: 0;
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: 0 0
-}
-
-.slick-dots li button:hover,
-.slick-dots li button:focus {
-    outline: none
-}
-
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
-    opacity: 1
-}
-
-.slick-dots li button:before {
-    font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    content: '•';
-    text-align: center;
-    opacity: .25;
-    color: #000;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
-}
-
-.slick-dots li.slick-active button:before {
-    opacity: .75;
-    color: #000
-}
-
-/*!
-Theme Name: Templify
-Author: ekreative
-Author URI: https://www.ekreative.com/
-Description: ScreenTimeChallenge theme
-Version: 1.0.0
-Text Domain:
-Tags:
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
-*/
-/*!
- * Bootstrap v4.6.1 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -17622,7 +17538,7 @@ th {
     padding-bottom: 12px
 }
 
-.pricing .slick-dots {
+.pricing  {
     position: relative
 }
 
@@ -17796,7 +17712,7 @@ th {
 
 .tiktok-videos__item-wrap img,
 .tiktok-videos__item-wrap video {
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     border-radius: 19px;
     height: 377px
 }
@@ -17938,30 +17854,8 @@ a:hover {
     opacity: .4
 }
 
-.slick-slider .slick-dots li {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    display: inline-block;
-    background: hsla(0, 0%, 100%, .1);
-    list-style-type: none;
-    margin: 0 6px
-}
 
-.slick-slider .slick-dots li button {
-    width: 18px;
-    height: 18px
-}
-
-.slick-slider .slick-dots li button:before {
-    width: 18px;
-    height: 18px;
-    color: unset !important
-}
-
-.slick-slider .slick-dots .slick-active {
-    background-color: #7361df
-}
+  
 
 .video-phone {
     max-height: 586px;
@@ -18478,6 +18372,65 @@ a:hover {
 .site-header .popup-menu__menu .page_item {
     margin: 0
 }
+
+
+
+.header-cta {
+    display: flex;
+    justify-content: start; 
+    gap: 20px; /* Space between buttons */
+    
+}
+
+.cta-wrapper {
+    
+    text-align: start; }
+
+.contact-btn{
+    display: inline-block;
+    padding: 10px 33px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.whatsapp-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px; 
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-btn {
+    background-color: rgb(54, 54, 54);
+}
+
+.contact-btn:hover {
+    background-color: white;
+    transform: scale(1.05);
+    color: #000;
+}
+
+.whatsapp-btn {
+    background-color: rgb(54, 3, 140);
+}
+
+.whatsapp-btn:hover {
+    background-color: white;
+    transform: scale(1.05);
+    color: #000;
+}
+
+  @media (max-width:767px) {
+    .header-cta {
+        display: flex;
+        justify-content: center; 
+        gap: 20px; /* Space between buttons */
+        
+    }
+  }
 
 @media (max-width:767px) {
 
@@ -19405,9 +19358,15 @@ footer .footer-menu-wrap {
     max-width: 152px;
     height: 68px
 }
-
+@media (max-width:896px) {
+    .logo-list {
+        flex-direction: row
+        
+    }
+    
+}
 @media (max-width:991px) {
-    .home .media-section .logo-list {
+    .home .media-section  {
         flex-direction: column
     }
 
@@ -19416,7 +19375,7 @@ footer .footer-menu-wrap {
     }
 
     .home .media-section .logo-list img {
-        max-width: 200px
+        max-width: 100px
     }
 }
 
@@ -20020,33 +19979,47 @@ footer .footer-menu-wrap {
     cursor: pointer;
 }
 
-.section-video-slider .slick-custom .icon {
-    font-size: 20px; /* Increase the icon size for better visibility */
-    color: #fff;      /* Set the default icon color */
+/* .section-video-slider .slick-custom .icon {
+    font-size: 20px; 
+    color: #fff;      
     transition: color 0.4s ease;
 }
 
 .section-video-slider .slick-custom:hover {
     background: #fff;
     color: #17171d;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Add shadow for hover effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); 
 }
 
 .section-video-slider .slick-custom:hover .icon {
-    color: #17171d;  /* Icon color change on hover */
+    color: #17171d; 
 }
 
 .section-video-slider .slick-custom-prev {
-    left: -30px;  /* Adjust the left arrow position */
-    background: #fff; 
-    padding: 3px;
+    left: -30px;  
+    
 
 }
 
 .section-video-slider .slick-custom-next {
-    right: -30px; /* Adjust the right arrow position to be symmetric */
+    right: -30px; 
+} */
+
+.slick-prev, .slick-next {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
+.slick-prev:hover, .slick-next:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff; /* Keep icon color white */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.slick-prev:focus, .slick-next:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Add focus outline */
+}
 
 .section-video-slider .video-templates__item {
     margin-right: 18px

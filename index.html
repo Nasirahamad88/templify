@@ -73,12 +73,7 @@
     <script type="text/javascript" src="js/vendor-wp-polyfill.min.js" id="wp-polyfill-js"></script>
     <script type="text/javascript" src="js/jquery-jquery.min.js" id="jquery-core-js"></script>
     <script type="text/javascript" src="js/jquery-jquery-migrate.min.js" id="jquery-migrate-js"></script>
-    <script type="text/javascript" id="templify-script-js-extra">
-        var fmp_global = { 
-            "ajax_url": "https://templify.video/wp-admin/admin-ajax.php", 
-            "nonce": "c8e6081315" 
-        };
-    </script>
+    
 
     <style>
         img#wpstats {
@@ -127,6 +122,13 @@
         .rtl td.recentcommentstexttop {
             padding: 0px 10px 0px 0px;
         }
+		body {
+    		background: linear-gradient(to bottom, rgb(6, 0, 16) 0%, rgb(20, 1, 46) 20%, rgb(4, 4, 57) 50%, black 80%, black 100%);
+		}
+
+		header{
+			background:black
+		}
     </style>
 
     <link rel="icon" href="favicons/05-favicon.png" sizes="32x32">
@@ -150,14 +152,14 @@
 				<div class="site-header__brand-logo"> <a href="templify.html" class="custom-logo-link" rel="home"
 						aria-current="page"><img width="530" height="160" src="images/08-templify-logo-new.png"
 							class="custom-logo" alt="Templify" decoding="async" fetchpriority="high"
-							srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_530/https://templify.video/wp-content/uploads/2023/08/templify-logo-new.png 530w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/https://templify.video/wp-content/uploads/2023/08/templify-logo-new-300x91.png 300w"
+							srcset=""
 							sizes="(max-width: 530px) 100vw, 530px"></a></div>
 				<div class="site-header__menu">
 					<div class="header-menu">
 						<ul id="menu-main-menu" class="menu">
 							<li id="menu-item-259"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-152 current_page_item menu-item-259">
-								<a href="templify.html" aria-current="page">Home</a></li>
+								<a href="/" aria-current="page">Home</a></li>
 							<li id="menu-item-261"
 								class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a
 									href="about.html">About</a></li>
@@ -176,11 +178,11 @@
 						</ul>
 					</div>
 				</div>
-				<ul class="language-switcher">
+				<!-- <ul class="language-switcher">
 					<li><a href="templify.html" class="current-lang" hreflang="en" lang="en">en</a></li>
 					<li class="delimiter"> |</li>
 					<li><a href="uk.html" class="" hreflang="uk" lang="uk">ua</a></li>
-				</ul>
+				</ul> -->
 				<div class="site-header__cta-button"> <a
 						href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611"
 						class="cta-button"> Download App </a></div>
@@ -195,7 +197,7 @@
 					<ul id="menu-main-menu-1" class="popup-menu__menu">
 						<li
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-152 current_page_item menu-item-259">
-							<a href="templify.html" aria-current="page">Home</a></li>
+							<a href="/" aria-current="page">Home</a></li>
 						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-261"><a
 								href="about.html">About</a></li>
 						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-262"><a
@@ -231,21 +233,29 @@
 								data-animated-words="">virality</span><br> of your content</h1>
 						<div class="text-media__text-wrap"> Creating amazing social content has never been easier with
 							hundreds of templates, text effects, and high-quality animations</div>
-						<div class="text-media__cta-button mt-5"> <a
-								href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611"
-								class="text-media__cta-button-link"> <noscript><img decoding="async"
-										src="images/images-download-button-new.png" alt="try for free"></noscript><img
-									decoding="async" class="lazyload"
-									src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-									data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/download-button-new.png"
-									alt="try for free"> </a></div>
+
+							<div class="header-cta mt-5">
+								<div class="cta-wrapper">
+								  <a href="/" class="cta-btn contact-btn">Contact</a>
+								</div>
+								
+								<div class="cta-wrapper">
+								  <a href="" class="cta-btn whatsapp-btn">What's App</a>
+								</div>
+							  </div>
+							  
+							
+							
+							
+							  
+							  
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section section-achievements">
+		<section class="section section-achievements" >
 			<div class="container">
-				<div class="row">
+				<div class="row"style="padding-top: 40px;" >
 					<div class="col-12 col-lg-9 section-achievements__wrap ellipse ellipse-1">
 						<ul class="achievements-list">
 							<li class="achievements-list__item" data-animation="true">
@@ -275,19 +285,19 @@
 				</div>
 				<div class="row ellipse ellipse-2">
 					<div class="col-12 col-lg-3 nav-tab-wrapper">
-						<div class="nav flex-column nav-pills features-tab" role="tablist" aria-orientation="vertical">
+						<div class="nav flex-column nav-pills features-tab" role="" aria-orientation="vertical">
 							<!-- Auto-editing -->
 							<a href="#feature-1" class="active" data-toggle="tab" data-tab="" data-tab-id="0"> 
-								<i class="fas fa-video" style="color: #084bbf;"></i> Auto-editing 
+								<i class="fas fa-video" style="color: #084bbf;background: linear-gradient(to bottom, rgb(14, 0, 36) 0%, rgb(8, 0, 41) 20%, rgb(4, 4, 57) 50%, rgb(8, 0, 37) 80%, rgb(8, 0, 35) 100%)"></i> Auto-editing 
 							</a>
 							<!-- Edit one file -->
 							<a href="#feature-2" class="" data-toggle="tab" data-tab="" data-tab-id="1"> 
-								<i class="fas fa-file-alt"></i> Edit one file 
+								<i class="fas fa-file-alt"  ></i> Edit one file 
 							</a>
 							<!-- Auto-sync -->
-							<a href="#feature-3" class="" data-toggle="tab" data-tab="" data-tab-id="2"> 
+							<!-- <a href="#feature-3" class="" data-toggle="tab" data-tab="" data-tab-id="2"> 
 								<i class="fas fa-sync"></i> Auto-sync 
-							</a>
+							</a> -->
 						</div>
 					</div>
 					
@@ -313,10 +323,10 @@
 											free music, and it&rsquo;s ready to post</div>
 									</div>
 									<div class="order-1 order-md-2 col-12 col-md-5 col-lg-5 tab-video-wrap"><video
-											poster="https://templify.video/wp-content/uploads/2023/06/feature-1-poster.png"
+											poster=""
 											class="video-feature" autoplay muted loop playsinline>
 											<source
-												src="https://templify.video/wp-content/uploads/2023/06/features-1-1.mp4"
+												src="/images/features-1-1.mp4"
 												type="video/mp4">
 											</source>
 										</video></div>
@@ -339,17 +349,20 @@
 										<div class="d-block d-md-none">Choose photo or video, Apply effect and filters,
 											Use your own font and music and then<br> export for all formats</div>
 									</div>
-									<div class="order-1 order-md-2 col-12 col-md-5 col-lg-5 tab-video-wrap"><video
-											poster="https://templify.video/wp-content/uploads/2023/06/feature-2-poster.png"
-											class="video-feature" preload="none" muted loop playsinline>
-											<source
-												src="https://templify.video/wp-content/uploads/2023/06/features-2.mp4"
-												type="video/mp4">
-											</source>
-										</video></div>
+									<div class="order-1 order-md-2 col-12 col-md-5 col-lg-5 tab-video-wrap">
+										<video id="myVideo" class="video-feature" autoplay muted loop playsinline>
+											<source src="/images/features-2.mp4" type="video/mp4">
+											
+										</video>
+									</div>
+									
+									
+									
+									
+									
 								</div>
 							</div>
-							<div class="tab-pane fade " id="feature-3" role="tabpanel">
+							<!-- <div class="tab-pane fade " id="feature-3" role="tabpanel">
 								<div class="row">
 									<div class="order-2 order-md-1 col-12 col-md-7 col-lg-7 tab-content-wrap">
 										<div class="d-none d-md-block">
@@ -370,21 +383,21 @@
 											do the rest</div>
 									</div>
 									<div class="order-1 order-md-2 col-12 col-md-5 col-lg-5 tab-video-wrap"><video
-											poster="https://templify.video/wp-content/uploads/2023/06/feature-3-poster.png"
-											class="video-feature" preload="none" muted loop playsinline>
+											poster="/images/feature-3-poster.png"
+											class="video-feature" preload="none" autoplay muted loop playsinline>
 											<source
-												src="https://templify.video/wp-content/uploads/2023/06/features-3.mp4"
+												src="/images/features-3.mp4"
 												type="video/mp4">
 											</source>
 										</video></div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-12 text-center cta-text-wrapper"> <a class="extra-glow glow-on-hover"
-							href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">Get
+							href="">Get
 							started</a></div>
 				</div>
 			</div>
@@ -553,660 +566,39 @@
 											data-sizes="(max-width: 172px) 100vw, 172px"></div>
 								</div>
 							</div>
-							<div class="video-templates__item" data-template-modal="11">
-								<div class="video-slider__item-wrap">
-									<div class="video-slider__item-poster"> <noscript><img width="172" height="307"
-												src="images/05-444_story0-1.png" class="attachment-large size-large"
-												alt="" decoding="async"
-												srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172/https://templify.video/wp-content/uploads/2023/05/444_story0-1.png 172w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_168/https://templify.video/wp-content/uploads/2023/05/444_story0-1-168x300.png 168w"
-												sizes="(max-width: 172px) 100vw, 172px"></noscript><img width="172"
-											height="307"
-											src="images/svg%22%20viewBox=%220%200%20172%20307%22%3E%3C-svg%3E"
-											data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172,h_307/https://templify.video/wp-content/uploads/2023/05/444_story0-1.png"
-											class="lazyload attachment-large size-large" alt="" decoding="async"
-											data-srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172/https://templify.video/wp-content/uploads/2023/05/444_story0-1.png 172w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_168/https://templify.video/wp-content/uploads/2023/05/444_story0-1-168x300.png 168w"
-											data-sizes="(max-width: 172px) 100vw, 172px"></div>
-								</div>
 							</div>
-							<div class="video-templates__item" data-template-modal="12">
-								<div class="video-slider__item-wrap">
-									<div class="video-slider__item-poster"> <noscript><img width="172" height="307"
-												src="images/05-477_story0-1.png" class="attachment-large size-large"
-												alt="" decoding="async"
-												srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172/https://templify.video/wp-content/uploads/2023/05/477_story0-1.png 172w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_168/https://templify.video/wp-content/uploads/2023/05/477_story0-1-168x300.png 168w"
-												sizes="(max-width: 172px) 100vw, 172px"></noscript><img width="172"
-											height="307"
-											src="images/svg%22%20viewBox=%220%200%20172%20307%22%3E%3C-svg%3E"
-											data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172,h_307/https://templify.video/wp-content/uploads/2023/05/477_story0-1.png"
-											class="lazyload attachment-large size-large" alt="" decoding="async"
-											data-srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172/https://templify.video/wp-content/uploads/2023/05/477_story0-1.png 172w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_168/https://templify.video/wp-content/uploads/2023/05/477_story0-1-168x300.png 168w"
-											data-sizes="(max-width: 172px) 100vw, 172px"></div>
-								</div>
 							</div>
-							<div class="video-templates__item" data-template-modal="13">
-								<div class="video-slider__item-wrap">
-									<div class="video-slider__item-poster"> <noscript><img width="172" height="307"
-												src="images/05-joy_fashion.png" class="attachment-large size-large"
-												alt="" decoding="async"
-												srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172/https://templify.video/wp-content/uploads/2023/05/joy_fashion.png 172w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_168/https://templify.video/wp-content/uploads/2023/05/joy_fashion-168x300.png 168w"
-												sizes="(max-width: 172px) 100vw, 172px"></noscript><img width="172"
-											height="307"
-											src="images/svg%22%20viewBox=%220%200%20172%20307%22%3E%3C-svg%3E"
-											data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172,h_307/https://templify.video/wp-content/uploads/2023/05/joy_fashion.png"
-											class="lazyload attachment-large size-large" alt="" decoding="async"
-											data-srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172/https://templify.video/wp-content/uploads/2023/05/joy_fashion.png 172w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_168/https://templify.video/wp-content/uploads/2023/05/joy_fashion-168x300.png 168w"
-											data-sizes="(max-width: 172px) 100vw, 172px"></div>
-								</div>
 							</div>
-							<div class="video-templates__item" data-template-modal="14">
-								<div class="video-slider__item-wrap">
-									<div class="video-slider__item-poster"> <noscript><img width="172" height="307"
-												src="images/05-story.png" class="attachment-large size-large" alt=""
-												decoding="async"
-												srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172/https://templify.video/wp-content/uploads/2023/05/story.png 172w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_168/https://templify.video/wp-content/uploads/2023/05/story-168x300.png 168w"
-												sizes="(max-width: 172px) 100vw, 172px"></noscript><img width="172"
-											height="307"
-											src="images/svg%22%20viewBox=%220%200%20172%20307%22%3E%3C-svg%3E"
-											data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172,h_307/https://templify.video/wp-content/uploads/2023/05/story.png"
-											class="lazyload attachment-large size-large" alt="" decoding="async"
-											data-srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_172/https://templify.video/wp-content/uploads/2023/05/story.png 172w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_168/https://templify.video/wp-content/uploads/2023/05/story-168x300.png 168w"
-											data-sizes="(max-width: 172px) 100vw, 172px"></div>
-								</div>
-							</div>
-							<div class="video-templates__item" data-template-modal="15">
-								<div class="video-slider__item-wrap">
-									<div class="video-slider__item-poster"> <noscript><img width="320" height="569"
-												src="images/04-163_story.png" class="attachment-large size-large" alt=""
-												decoding="async"
-												srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_320/https://templify.video/wp-content/uploads/2024/04/163_story.png 320w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_169/https://templify.video/wp-content/uploads/2024/04/163_story-169x300.png 169w"
-												sizes="(max-width: 320px) 100vw, 320px"></noscript><img width="320"
-											height="569"
-											src="images/svg%22%20viewBox=%220%200%20320%20569%22%3E%3C-svg%3E"
-											data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_320,h_569/https://templify.video/wp-content/uploads/2024/04/163_story.png"
-											class="lazyload attachment-large size-large" alt="" decoding="async"
-											data-srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_320/https://templify.video/wp-content/uploads/2024/04/163_story.png 320w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_169/https://templify.video/wp-content/uploads/2024/04/163_story-169x300.png 169w"
-											data-sizes="(max-width: 320px) 100vw, 320px"></div>
-								</div>
-							</div>
-							<div class="video-templates__item" data-template-modal="16">
-								<div class="video-slider__item-wrap">
-									<div class="video-slider__item-poster"> <noscript><img width="320" height="569"
-												src="images/04-166_bakery.png" class="attachment-large size-large"
-												alt="" decoding="async"
-												srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_320/https://templify.video/wp-content/uploads/2024/04/166_bakery.png 320w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_169/https://templify.video/wp-content/uploads/2024/04/166_bakery-169x300.png 169w"
-												sizes="(max-width: 320px) 100vw, 320px"></noscript><img width="320"
-											height="569"
-											src="images/svg%22%20viewBox=%220%200%20320%20569%22%3E%3C-svg%3E"
-											data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_320,h_569/https://templify.video/wp-content/uploads/2024/04/166_bakery.png"
-											class="lazyload attachment-large size-large" alt="" decoding="async"
-											data-srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_320/https://templify.video/wp-content/uploads/2024/04/166_bakery.png 320w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_169/https://templify.video/wp-content/uploads/2024/04/166_bakery-169x300.png 169w"
-											data-sizes="(max-width: 320px) 100vw, 320px"></div>
-								</div>
-							</div>
-							<div class="video-templates__item" data-template-modal="17">
-								<div class="video-slider__item-wrap">
-									<div class="video-slider__item-poster"> <noscript><img width="320" height="569"
-												src="images/04-438_story.png" class="attachment-large size-large" alt=""
-												decoding="async"
-												srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_320/https://templify.video/wp-content/uploads/2024/04/438_story.png 320w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_169/https://templify.video/wp-content/uploads/2024/04/438_story-169x300.png 169w"
-												sizes="(max-width: 320px) 100vw, 320px"></noscript><img width="320"
-											height="569"
-											src="images/svg%22%20viewBox=%220%200%20320%20569%22%3E%3C-svg%3E"
-											data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_320,h_569/https://templify.video/wp-content/uploads/2024/04/438_story.png"
-											class="lazyload attachment-large size-large" alt="" decoding="async"
-											data-srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_320/https://templify.video/wp-content/uploads/2024/04/438_story.png 320w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_169/https://templify.video/wp-content/uploads/2024/04/438_story-169x300.png 169w"
-											data-sizes="(max-width: 320px) 100vw, 320px"></div>
-								</div>
-							</div>
-							<div class="video-templates__item" data-template-modal="18">
-								<div class="video-slider__item-wrap">
-									<div class="video-slider__item-poster"> <noscript><img width="576" height="1024"
-												src="images/06-522_Story-576x1024.jpg"
-												class="attachment-large size-large" alt="" decoding="async"
-												srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_576/https://templify.video/wp-content/uploads/2023/06/522_Story-576x1024.jpg 576w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_169/https://templify.video/wp-content/uploads/2023/06/522_Story-169x300.jpg 169w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_768/https://templify.video/wp-content/uploads/2023/06/522_Story-768x1365.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_864/https://templify.video/wp-content/uploads/2023/06/522_Story-864x1536.jpg 864w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1080/https://templify.video/wp-content/uploads/2023/06/522_Story.jpg 1080w"
-												sizes="(max-width: 576px) 100vw, 576px"></noscript><img width="576"
-											height="1024"
-											src="images/svg%22%20viewBox=%220%200%20576%201024%22%3E%3C-svg%3E"
-											data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_576,h_1024/https://templify.video/wp-content/uploads/2023/06/522_Story-576x1024.jpg"
-											class="lazyload attachment-large size-large" alt="" decoding="async"
-											data-srcset="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_576/https://templify.video/wp-content/uploads/2023/06/522_Story-576x1024.jpg 576w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_169/https://templify.video/wp-content/uploads/2023/06/522_Story-169x300.jpg 169w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_768/https://templify.video/wp-content/uploads/2023/06/522_Story-768x1365.jpg 768w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_864/https://templify.video/wp-content/uploads/2023/06/522_Story-864x1536.jpg 864w, https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1080/https://templify.video/wp-content/uploads/2023/06/522_Story.jpg 1080w"
-											data-sizes="(max-width: 576px) 100vw, 576px"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 text-center cta-text-wrapper"> <a class="extra-glow glow-on-hover"
-							href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">Get
-							started</a></div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-1" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2024/03/1-576x1024.webp"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2024/03/1.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-2" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2024/03/2-576x1024.webp"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2024/03/2.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-3" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2024/03/3-576x1024.webp"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2024/03/3.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-4" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2024/03/4-576x1024.webp"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2024/03/4.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-5" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2024/03/5-576x1024.webp"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2024/03/5.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-6" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2024/03/6-576x1024.webp"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2024/03/6.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-7" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2024/03/7-576x1024.webp"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2024/03/7.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-8" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2024/03/8-576x1024.webp"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2024/03/8.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-9" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2023/05/333_story0-1.png"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2023/05/333_story.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-10" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2023/05/414-Story-1.png"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2023/05/414_Story.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-11" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2023/05/444_story0-1.png"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2023/05/444_story.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-12" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2023/05/477_story0-1.png"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2023/05/477_story.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-13" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2023/05/joy_fashion.png"
-										playsinline loop>
-										<source
-											src="https://templify.video/wp-content/uploads/2023/05/joy_fashion_story.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-14" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2023/05/story.png" playsinline
-										loop>
-										<source
-											src="https://templify.video/wp-content/uploads/2023/05/memories_ceramic_story.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-15" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2024/04/163_story.png"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2023/06/163_story.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-16" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2024/04/166_bakery.png"
-										playsinline loop>
-										<source
-											src="https://templify.video/wp-content/uploads/2023/06/166_bakery_story.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-17" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2024/04/438_story.png"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2023/06/438_story.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="modal video-modal bd-example-modal-lg" id="template-modal-18" tabindex="-1" role="dialog"
-					aria-hidden="true">
-					<div class="modal-dialog" role="document">
-						<div class="modal-content">
-							<div class="modal-body d-flex flex-row"> <button type="button"
-									class="close btn-close position-absolute" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span> </button>
-								<div class="video-wrap"><video class="video" preload="none"
-										poster="https://templify.video/wp-content/uploads/2023/06/522_Story-576x1024.jpg"
-										playsinline loop>
-										<source src="https://templify.video/wp-content/uploads/2023/06/522_Story.mp4">
-										</source>
-									</video></div>
-								<div class="modal-text-wrap">
-									<h3 class="modal-title"> Discover 500+ social media templates</h3> <a
-										class="cta-button"
-										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611">
-										Download app </a>
-									<p class="">or scan</p> <noscript><img decoding="async" class="img-qr"
-											src="images/images-QRCode.png" alt="qr code"></noscript><img
-										decoding="async" class="lazyload img-qr"
-										src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-										data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-										alt="qr code">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+							<script>
+								document.addEventListener("DOMContentLoaded", function () {
+								  const items = document.querySelectorAll(".video-templates__item");
+								  let currentIndex = 0;
+								  const totalItems = items.length;
+							  
+								  // Function to show the current item
+								  function showItem(index) {
+									items.forEach((item, i) => {
+									  item.classList.remove("active");
+									  if (i === index) {
+										item.classList.add("active");
+									  }
+									});
+								  }
+							  
+								  // Function to change to the next item
+								  function nextItem() {
+									currentIndex = (currentIndex + 1) % totalItems; // Loop back to the first item
+									showItem(currentIndex);
+								  }
+							  
+								  // Show the first item initially
+								  showItem(currentIndex);
+								  
+								  // Change to the next item every 5 seconds
+								  setInterval(nextItem, 5000); // Adjust the interval as needed
+								});
+							  </script>
+							  
 		</section>
 		<section class="section testimonial-section">
 			<div class="container">
@@ -1473,9 +865,9 @@
 										<li class="text-muted"> New templates every week</li>
 										<li class="text-muted"> Edit one file</li>
 										<li class="text-muted"> Auto-sync files to song</li>
-									</ul> <a
+									<!-- </ul> <a
 										href=""
-										class="cta-text text-center"> Download the app </a>
+										class="cta-text text-center"> Download the app </a> -->
 								</div>
 							</div>
 							<div class="card card-pricing popular">
@@ -1496,9 +888,9 @@
 										<li class=""> New templates every week</li>
 										<li class=""> Editor</li>
 										<li class=""> Auto-sync files to song</li>
-									</ul> <a
+									<!-- </ul> <a
 										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611"
-										class="cta-button-yellow text-center"> Continue </a>
+										class="cta-button-yellow text-center"> Continue </a> -->
 								</div>
 							</div>
 							<div class="card card-pricing ">
@@ -1518,9 +910,9 @@
 										<li class=""> New templates every week</li>
 										<li class=""> Editor</li>
 										<li class=""> Auto-sync files to song</li>
-									</ul> <a
+									<!-- </ul> <a
 										href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611"
-										class="cta-text text-center"> Download the app </a>
+										class="cta-text text-center"> Download the app </a> -->
 								</div>
 							</div>
 						</div>
@@ -1577,17 +969,29 @@
 					<div class="section-subtitle text-muted mt-2 mb-2"> 89% users of Template have increased their sale
 						on social media up to 25%</div> <a class="mt-4"
 						href="https://apps.apple.com/us/app/templify-video-story-editor/id1595549611"
-						aria-label="download on the app store"> <noscript><img decoding="async"
-								src="images/images-AppStore_black.svg" width="189" height="63"
-								alt="app store image"></noscript><img decoding="async" class="lazyload"
-							src="images/svg%22%20viewBox=%220%200%20189%2063%22%3E%3C-svg%3E"
-							data-src="https://templify.video/wp-content/themes/templify/images/AppStore_black.svg"
-							width="189" height="63" alt="app store image"> </a> <span class="text-muted">or</span>
-					<noscript><img decoding="async" class="img-qr" src="images/images-QRCode.png"
-							alt="qr code"></noscript><img decoding="async" class="lazyload img-qr"
-						src="images/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C-svg%3E"
-						data-src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://templify.video/wp-content/themes/templify/images/QRCode.png"
-						alt="qr code">
+						aria-label="download on the app store"> 
+						<div class="header-cta" style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 0;">
+							<div class="cta-wrapper">
+								<a href="/" class="cta-btn contact-btn" 
+								   style="text-align: center; display: inline-block; padding: 10px 20px; color: white; background-color: rgb(54, 54, 54); border-radius: 20px; text-decoration: none; transition: transform 0.3s ease, background-color 0.3s ease;"
+								   onmouseover="this.style.backgroundColor='white'; this.style.color='black'; this.style.transform='scale(1.05)';" 
+								   onmouseout="this.style.backgroundColor='rgb(54, 54, 54)'; this.style.color='white'; this.style.transform='scale(1)';">
+									Contact
+								</a>
+							</div>
+						
+							<div class="cta-wrapper" style="margin-top: 20px;">
+								<a href="" class="cta-btn whatsapp-btn" 
+								   style="text-align: center; display: inline-block; padding: 10px 20px; color: white; background-color: rgb(54, 3, 140); border-radius: 20px; text-decoration: none; transition: transform 0.3s ease, background-color 0.3s ease;"
+								   onmouseover="this.style.backgroundColor='white'; this.style.color='black'; this.style.transform='scale(1.05)';" 
+								   onmouseout="this.style.backgroundColor='rgb(54, 3, 140)'; this.style.color='white'; this.style.transform='scale(1)';">
+									What's App
+								</a>
+							</div>
+						</div>
+						
+								 
+					
 				</div>
 			</div>
 			<div class="video-bg-wrap"><video id="video" playsinline autoplay muted loop>
@@ -1595,7 +999,7 @@
 					</source>
 				</video></div>
 		</section>
-	</div>
+	
 	<footer>
 		<div class="container">
 			<div class="row">
